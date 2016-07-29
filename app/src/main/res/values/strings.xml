@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Bank Project</string>
+    <string name="table">Exchange rates table</string>
+    <string name="calculator">Calculator</string>
+    <string name="maps">Maps</string>
+    <string name="about">About</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+</resources>

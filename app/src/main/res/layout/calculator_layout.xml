@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <Spinner
+        android:layout_marginTop="70dp"
+        android:id="@+id/bank_sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/mySpinnerStyle"
+        android:background="@drawable/spinner_borders"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:text="Currency"
+            android:textSize="16sp"
+            android:textColor="#0C090A"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="16sp"
+            android:textColor="#008000"
+            android:layout_weight="2.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Buy"/>
+
+        <TextView
+            android:textSize="16sp"
+            android:textColor="#800000"
+            android:layout_weight="2.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Sell"/>
+
+    </LinearLayout>
+
+   <!-- <ListView
+        android:id="@+id/calc_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+
+        <ImageView
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rsz_md"/>
+
+        <EditText
+            android:inputType="numberDecimal"
+            android:id="@+id/md_calc"
+            android:maxLength="10"
+            android:layout_weight="3.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#008000"
+            android:layout_weight="2.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="-"/>
+
+        <TextView
+            android:textColor="#800000"
+            android:layout_weight="2.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="-"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+
+        <ImageView
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rsz_us"/>
+
+        <EditText
+            android:inputType="numberDecimal"
+            android:id="@+id/us_calc"
+            android:maxLength="10"
+            android:layout_weight="3.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#008000"
+            android:id="@+id/us_buy"
+            android:layout_weight="2.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0.00"/>
+
+        <TextView
+            android:textColor="#800000"
+            android:id="@+id/us_sell"
+            android:layout_weight="2.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0.00"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+
+        <ImageView
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rsz_eu"/>
+
+        <EditText
+            android:inputType="numberDecimal"
+            android:id="@+id/eu_calc"
+            android:maxLength="10"
+            android:layout_weight="3.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#008000"
+            android:id="@+id/eu_buy"
+            android:layout_weight="2.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0.00"/>
+
+        <TextView
+            android:textColor="#800000"
+
+            android:id="@+id/eu_sell"
+            android:layout_weight="2.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0.00"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+
+        <ImageView
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rsz_ru"/>
+
+        <EditText
+            android:inputType="numberDecimal"
+            android:id="@+id/ru_calc"
+            android:maxLength="10"
+            android:layout_weight="3.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#008000"
+            android:id="@+id/ru_buy"
+            android:layout_weight="2.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0.00"/>
+
+        <TextView
+            android:textColor="#800000"
+            android:id="@+id/ru_sell"
+            android:layout_weight="2.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0.00"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+
+        <ImageView
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rsz_ro"/>
+
+        <EditText
+            android:inputType="numberDecimal"
+            android:id="@+id/ro_calc"
+            android:maxLength="10"
+            android:layout_weight="3.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#008000"
+            android:id="@+id/ro_buy"
+            android:layout_weight="2.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0.00"/>
+
+        <TextView
+            android:textColor="#800000"
+            android:id="@+id/ro_sell"
+            android:layout_weight="2.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0.00"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+
+        <ImageView
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rsz_ua"/>
+
+        <EditText
+            android:inputType="numberDecimal"
+            android:id="@+id/ua_calc"
+            android:maxLength="10"
+            android:layout_weight="3.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#008000"
+            android:id="@+id/ua_buy"
+            android:layout_weight="2.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0.00"/>
+
+        <TextView
+            android:textColor="#800000"
+            android:id="@+id/ua_sell"
+            android:layout_weight="2.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0.00"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+
+        <ImageView
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rsz_gb"/>
+
+        <EditText
+            android:inputType="numberDecimal"
+            android:id="@+id/gb_calc"
+            android:maxLength="10"
+            android:layout_weight="3.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#008000"
+            android:id="@+id/gb_buy"
+            android:layout_weight="2.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0.00"/>
+
+        <TextView
+            android:textColor="#800000"
+            android:id="@+id/gb_sell"
+            android:layout_weight="2.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0.00"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

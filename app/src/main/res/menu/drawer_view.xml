@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_first_fragment"
+            android:icon="@drawable/table"
+            android:title="Bank exchange rates" />
+        <item
+            android:id="@+id/nav_second_fragment"
+            android:icon="@drawable/calculator"
+            android:title="Converter" />
+        <item
+            android:id="@+id/nav_third_fragment"
+            android:icon="@drawable/marker"
+            android:title="Map" />
+    </group>
+    <item android:title="Options">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/about_app"
+                    android:icon="@drawable/about"
+                    android:title="About" />
+            </group>
+        </menu>
+    </item>
+</menu>
